@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(17, 74, 85);
+    overflow: hidden;
+  }
+  
+  span {
+    background: url("https://cdn4.iconfinder.com/data/icons/crime-and-security-24/64/57-512.png");
+    
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    pointer-events: none;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-40%, -40%);
+    animation: animate 6s linear;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translate(-40%, -40%);
+      opacity: 1;
+      filter: hue-rotate(0);
+    }
+    100% {
+      transform: translate(-40%, -600%);
+      opacity: 0;
+      filter: hue-rotate(720deg);
+    }
+  }
